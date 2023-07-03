@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptation.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+   <div class="root">
+       <div class="header">
+           <a class="active" href="index.html"><img src="logo.svg" style="wight:40px;height:40px;filter:invert;">your logo</a>
+            <a href=""><img src="https://img.icons8.com/ios-glyphs/30/null/bot.png"/>TG</a>
+            <a href="faq.html">faq</a>
+
+       </div>
+
+       <div class="photo"><img src="steam.svg"></div>
+       <div class="content">
+           <form class="forma" onsubmit="return false;">
+               <div class="block-left">
+                   <div class="h1_phot">
+
+                   <h1 class="poplsteam"><img class="phot" src="steam2.png">Пополнить Steam</h1>
+                    </div>
+                    <div class="log-pass">
+                        <label>
+                            <h4 style="color:#cfd4da;"><b>Логин Steam</b></h4><br>
+                            <input type="text" id="inputLogin" pattern="[A-Za-z]{3}" >
+                        </label>
+                        <label>
+                            <h4 style="padding-bottom:10px;color:#cfd4da;"><b>Сумма</b></h4>
+
+                            <input type="number" placeholder="100" max="10000" id="inputSumm">
+                            <div class="summbtn"><br>
+                                <button class="btn11" type="button" id="1">+100 ₽</button>
+                                <button class="btn11" type="button" id="2">+500 ₽</button>
+                                <button class="btn11" type="button" id="3">+1000 ₽</button>
+                            </div>
+
+                        </label>
+                    </div>
+                   <div class="vopr">
+                       <p class ="p1" id="knop1"><b>Что такое логин?</b></p>
+                       <p id="knop2"><b>Время зачисления?</b></p>
+                       <p class="p3" id="knop3"><b>Лимит пополнений?</b></p>
+
+                   </div>
+               </div>
+               <div class="formright">
+                   <div class="infori">
+                       <span class="spam1">Проверить данные</span><br>
+                       <span class="spam2">Сумма:</span>
+                       <span class="spam3" id="summa">100₽</span>
+                       <span class="spam4">Сумма с учетом комиссии</span>
+                       <span class="spam5" id="summacons">122₽</span><br><br>
+                       <button  type="submit" class="cash" id="cash" disabled="true">Пополнить</button>
+                   </div>
+               </div>
+
+
+           </form>
+       </div>
+
+       <div class="footer">
+            <div class="foot">
+                Пополнений<br>
+                <span> Created by: w_cod</span>
+            </div>
+           <div class="foot_r">
+
+                <img src="smile-a9a497f3.svg">
+               312412
+           </div>
+           <hr>
+           <div>
+               SITE_NAME.ru
+           </div>
+       </div>
+
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
+
+
+
+
+
+
