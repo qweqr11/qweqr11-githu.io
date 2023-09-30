@@ -90,9 +90,9 @@ function cashevent(e){
         tg.MainButton.hide();
     }else{
         tg.Button.setText("Вы нажали пополнить");
-        itm =  'нажал';
+        var itm =  'нажал';
         tg.mainButton.show();
-    }
+    };
 }
 
 
