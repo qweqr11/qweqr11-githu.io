@@ -114,3 +114,12 @@ function knop3func(e){
         knop3.textContent = 'Лимит пополнений?'
     }
 }
+
+let tg = window.Telegram.WebApp;
+tg.expand();
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color =  "2cab37";
+let itm = "";
+Telegram.WebApp.onEvent("mainButtonClicked",function(){
+    tg.send(item);                       
+});
