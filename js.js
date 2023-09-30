@@ -84,7 +84,7 @@ function updateV(e){
 
 const cash = document.getElementById('cash')
 cash.addEventListener('click',function(){
-    if tg.MainButton.isVisible{
+    if (tg.MainButton.isVisible) {
         tg.MainButton.hide();
     }else{
         tg.Button.setText("Вы нажали пополнить");
