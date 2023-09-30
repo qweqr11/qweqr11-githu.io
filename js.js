@@ -96,7 +96,7 @@ cash.addEventListener('click',function(){
 //function cashevent(e){
     ///window.location.href = 'https://my.qiwi.com/Roman-A6Vz2cOdX8';
 
-}
+
 
 
 
