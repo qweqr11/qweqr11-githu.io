@@ -5,6 +5,16 @@ const inputSumms = document.getElementById('inputSumm')
 console.log(inputLogin.value)
 console.log(inputSumm.value)
 
+let tg = window.Telegram.WebApp;
+tg.expand();
+tg.MainButton.textColor = "#FFFFFF";
+tg.MainButton.color =  "2cab37";
+let itm = "123";
+Telegram.WebApp.onEvent("mainButtonClicked",function(){
+    tg.send(itm);                       
+});
+
+
 
 var btn100 = document.getElementById('1')
 var btn500 = document.getElementById('2')
@@ -75,7 +85,14 @@ function updateV(e){
 const cash = document.getElementById('cash')
 cash.addEventListener('click',cashevent);
 function cashevent(e){
-    window.location.href = 'https://my.qiwi.com/Roman-A6Vz2cOdX8';
+    ///window.location.href = 'https://my.qiwi.com/Roman-A6Vz2cOdX8';
+    if tg.MainButton.isVisible{
+        tg.MainButton.hide();
+    }else{
+        tg.Button.setText("Вы нажали пополнить");
+        itm =  'нажал';
+        tg.mainButton.show();
+    }
 }
 
 
@@ -115,11 +132,3 @@ function knop3func(e){
     }
 }
 
-let tg = window.Telegram.WebApp;
-tg.expand();
-tg.MainButton.textColor = "#FFFFFF";
-tg.MainButton.color =  "2cab37";
-let itm = "123";
-Telegram.WebApp.onEvent("mainButtonClicked",function(){
-    tg.send(itm);                       
-});
