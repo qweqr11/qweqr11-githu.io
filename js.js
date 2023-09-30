@@ -80,7 +80,7 @@ function updateV(e){
         cash.className = 'cash'
         cash.disabled = true;
     }
-}
+
 
 const cash = document.getElementById('cash')
 cash.addEventListener('click',function(){
